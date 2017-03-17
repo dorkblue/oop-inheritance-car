@@ -49,7 +49,9 @@ Car.prototype.park = function() {
 // phase 3
 
 Car.prototype.pickUp = function(name) {
-  if (this.running && this.passengers.length + 1 < this.seats) {
+  if (this.running && this.passengers.length < this.seats - 1) {
+    console.log('HERE')
+    console.log(this.passengers.length)
     this.passengers.push(name);
     console.log('driving to pick up ' + name);
     return true;

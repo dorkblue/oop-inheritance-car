@@ -8,7 +8,4 @@ function Truck(make, model, year, color) {
 
 Truck.prototype = Object.create(Car.prototype)
 
-
-
-
 module.exports = Truck;

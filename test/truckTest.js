@@ -23,6 +23,6 @@ assert.strictEqual(myTruck.color, 'green', 'Constructor did not set color')
 assert.deepEqual(myTruck.passengers, [], 'Constructor did not set passengers')
 success()
 
-console.log('\nTesting seat default\n')
+console.log('\nTesting default Seat numbers\n')
 assert.strictEqual(myTruck.seats, 3, 'must default to 3 seats')
 success()
